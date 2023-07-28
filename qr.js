@@ -6,7 +6,7 @@ const wrapper = document.querySelector(".wrapper"),
     closeBtn = wrapper.querySelector(".closeBtn");
 
 function fetchRequest(formData, file) {
-    infotext.innerText = "QR Sacning"
+    infotext.innerText = "QR Sacning..."
     infotext.style.color = 'green'
     fetch("https://api.qrserver.com/v1/read-qr-code/? ", {
         method: "POST", body: formData
